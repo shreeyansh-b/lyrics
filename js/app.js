@@ -34,7 +34,7 @@ function searchSong(e){
     let search = String(e.target.value);
     search = search.replace(/\s/g, "%20");  //replacing whitespaces with %20
     async function getSong(){
-        const res = await fetch(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=${api_key_lastfm}&format=json`);
+        const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=${api_key_lastfm}&format=json`);
         const data = await res.json();
         return data;
     }
