@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./sass/main.css" rel="stylesheet">
+    <title>Lyrics Finder</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link home">Home</a>
+                </li><li class="header__item">                          <!-- using this to remove the spaces from inline-block-->
+                    <a href="#" class="header__link">Find</a>
+                </li><li class="header__item">
+                    <a href="#" class="header__link" >Top Artists</a>
+                </li><li class="header__item">
+                    <a href="#" class="header__link">Top Tracks</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div class="welcome__heading">
+                <h1>Welcome to Lyrics Finder!</h1>
+                <h2>Find lyrics of your favourite song right here right now!</h2>
+            </div>
+            <div class="welcome__search">
+                <input type="text" class="input">
+                <a class="welcome__search--btn" href="#"><i class="material-icons">search</i></a>
+                <div class="welcome__result">
+                    
+
+                    <!-- <div class="welcome__text">
+                        <a href="#" class="welcome__link">dsfdf  | sdff
+                        </a>
+                    </div> -->
+
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="result">
+            <div class="result__container">
+                <div class="result__album-art">
+                    <img src="" alt="" class="result__album-image">
+                </div>
+                <div class="result__artist">
+                    <!-- <h1>Song Name</h1>
+                    <h1>Artist Name</h1> -->
+                </div>
+                <div class="result__lyrics">
+                    <h4></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <span>All Rights Reserved</span>
+        <span>&copy; 2020</span>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

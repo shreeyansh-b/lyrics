@@ -1,0 +1,24 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    position: relative;         //for sticking footer to end
+    min-height: 100%;        //for sticking footer to end
+    @include respond(tablet){
+        font-size: 43.75%;
+    }
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    color: $color-black;
+}

@@ -1,0 +1,31 @@
+.result{
+    text-align: center;
+    &__container{
+        margin-top: 5rem;
+        
+    }
+    &__album-art{
+        margin: 0 auto;
+        width: 20rem;
+        height: 20rem;
+    }
+    &__album-image{
+        width: 100%;
+        height: 100%;
+    }
+    &__artist{
+
+    }
+    &__lyrics{
+        max-width: 192rem;
+        margin: 0 auto;
+        padding: 5rem 15rem;
+        white-space: pre-line; // for correct displaying of \r and \n from json
+        @include respond(tablet){
+            padding: 3rem 5rem;
+        }
+        h4{
+            font-weight: 600;
+        }
+    }
+}

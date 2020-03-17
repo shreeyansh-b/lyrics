@@ -1,0 +1,29 @@
+.footer{
+    background-color: $color-grey;
+    text-align: center;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+    span{
+        color: #ccc;
+        font-size: 1.4rem;
+    }
+    &__nav{
+
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__link:link, &__link:visited{
+        display: block;
+        position: relative;
+        text-decoration: none;
+        font-weight: 400;
+        color: #eee;
+        padding: 1rem;
+    }
+}

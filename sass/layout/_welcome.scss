@@ -1,0 +1,62 @@
+.welcome{
+    text-align: center;
+    text-transform: capitalize;
+    input[type="text"]{
+        padding: 1rem 4rem 1rem 2rem;
+        border-radius: 10rem;
+        font-size: 2rem;
+        border: none;
+        background-color: $color-black;
+        color: #eee;
+    }
+    &__heading{
+
+    }
+    &__search{
+        display: inline-block;
+        position: relative;
+        &--btn:link, &--btn:visited{
+            color: #eee;
+            margin-left: -4rem;
+            vertical-align: middle;
+        }
+    }
+    &__result{
+        width: 26.5rem;
+        a:link, a:visited{
+            position: relative;
+            text-decoration: none;
+            color: #eee;
+            display: block;
+            padding: 1rem 2rem;
+            z-index: 200;
+        }
+        @include respond(tablet){
+            margin-top: -0.2rem;
+        }
+        margin-left: 2rem;
+    }
+    &__text{
+        background-color: $color-grey;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            background-color: darken($color-grey, 30);
+            z-index: 100;
+            transition: all 0.2s;
+        }
+    }
+    &__text:hover{
+        &::before{
+            opacity: 1;
+        }
+    }
+
+}

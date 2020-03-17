@@ -1,0 +1,22 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+
+
+
+
+@import "base/reset";
+@import "base/typography";
+@import "base/animation";
+
+
+
+
+@import "pages/home";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "layout/welcome";
+
+@import "components/result";
